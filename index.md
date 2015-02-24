@@ -30,9 +30,12 @@ tagline: Main Page
 
 {% for url in repo[1] %}
 <b><a href="{{ url["html_url"] }}">{{ url["full_name"] }}</a></b> - <small>{{ url["description"] }}</small>
+{% endfor %}
 
 {% endfor %}
-{% endfor %}
+
+
+
 
 <!--
 "name": "allbiovm",
